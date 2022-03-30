@@ -1,0 +1,16 @@
+#include  <stdio.h>  //학교 우분투 4주차 프로세스 정보획득 시스템 호출 과제
+#include  <sys/types.h> 
+#include  <unistd.h>
+
+void  main() 
+{
+    pid_t  pid;
+    if( (pid= fork())  <  0 ) 
+            perror(“fork failed”);
+    else if(  pid == 0 )
+            printf(“child process (pid=%d), (ppid=%d)\n”,  getpid(), getppid() ); 
+    else
+            printf(“parent process (pid=%d), (ppid=%d)\n”, getpid(), getppid() );
+}
+// warning: implicit declaration of function 'printf'; did you mean 'printf'? 오류가 났는데.. 뭔지 모르겠음.. ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ으아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
+// 찾아볼게요
