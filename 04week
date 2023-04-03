@@ -12,5 +12,4 @@ void  main()
     else
             printf(“parent process (pid=%d), (ppid=%d)\n”, getpid(), getppid() );
 }
-// warning: implicit declaration of function 'printf'; did you mean 'printf'? 오류가 났는데.. 뭔지 모르겠음.. ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ으아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-// 찾아볼게요
+// warning: implicit declaration of function 'printf'; did you mean 'printf'? 
